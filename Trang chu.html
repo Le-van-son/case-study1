@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TRang chủ</title>
+</head>
+
+<body style="background-image: url(2.jpg)" >
+<center><table>
+  <tr><td></td></tr><br>
+  <tr><td></td></tr><br>
+  <tr></tr>
+  <tr>
+    <td>User name : <br> </td><td><input id="usn" placeholder="Enter acc"></td>
+  </tr>
+<tr>
+  <td>Password  : </td><td><input id="pass" placeholder="Enter pass"></td>
+</tr>
+  <tr><td></td><td><button onclick="log()">Login</button></td></tr>
+
+</table>
+</center>
+
+<script>
+  let a = document.getElementById("usn")
+  let b = document.getElementById("pass")
+  function log(){
+    let u = a.value
+    let p = b.value
+    if(u=="anhson" && p == 1){
+      window.location = "gameduabong.html"
+    }
+  }
+</script>
+</body>
+</html>
