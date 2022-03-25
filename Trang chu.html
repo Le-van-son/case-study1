@@ -5,16 +5,16 @@
     <title>TRang chủ</title>
 </head>
 
-<body style="background-image: url(2.jpg)" >
+<body style="background-image: url(cpo.jpg)" >
 <center><table>
   <tr><td></td></tr><br>
   <tr><td></td></tr><br>
   <tr></tr>
   <tr>
-    <td>User name : <br> </td><td><input id="usn" placeholder="Enter acc"></td>
+    <td style="color: aliceblue">User name : <br> </td><td><input id="usn" placeholder="Enter acc"></td>
   </tr>
 <tr>
-  <td>Password  : </td><td><input id="pass" placeholder="Enter pass"></td>
+  <td style="color: aliceblue">Password  : </td><td><input id="pass" placeholder="Enter pass"></td>
 </tr>
   <tr><td></td><td><button onclick="log()">Login</button></td></tr>
 
@@ -30,7 +30,10 @@
     if(u=="anhson" && p == 1){
       window.location = "gameduabong.html"
     }
-  }
+    else {
+        alert("Lỗi đăng nhập")
+    }
+    }
 </script>
 </body>
 </html>

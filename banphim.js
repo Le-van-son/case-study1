@@ -7,14 +7,14 @@ function chan1() {
     if (parseInt(anh.style.left) < 0) {
         speed = 0
     }
-    if (parseInt(anh.style.left) > 780) {
+    if (parseInt(anh.style.left) > 720) {
         speed = 0
     }
     if (parseInt(anh.style.top) < 0) {
         speed = 0
     }
-    if (parseInt(anh.style.top) < 0) {
-        speed = 1200
+    if (parseInt(anh.style.top) > 1200) {
+        speed = 0
     }
 }
 chan1()
@@ -31,7 +31,7 @@ function dichuyen(){
     }
     }
     if (evt.keyCode ==39){
-        if(parseInt(anh.style.left) <= 780){
+        if(parseInt(anh.style.left) <= 720){
         anh.style.left = parseInt(anh.style.left) + 20 + "px";
     }
     }
@@ -50,9 +50,7 @@ function dichuyen(){
 dichuyen()
 
 
-function bd(){
-    move()
-}
+
 // Sân bóng di chuyển;
 let duong = document.getElementById('myCanvas');
 function move() {
